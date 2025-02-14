@@ -9,43 +9,54 @@
     <!-- Custom Styles -->
     <style>
         body {
-            background: url('https://source.unsplash.com/1600x900/?cloud,technology') no-repeat center center fixed;
-            background-size: cover;
+            background-color: #0f171e; /* Prime Video Dark Theme */
             color: white;
+            font-family: Arial, sans-serif;
         }
         .container {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 10px;
             margin-top: 50px;
         }
         h1, h2 {
             text-align: center;
+            color: #1f80e0; /* Prime Video Blue */
         }
         .btn-primary {
-            background-color: #007bff;
+            background-color: #1f80e0;
             border: none;
         }
         .btn-primary:hover {
-            background-color: #0056b3;
+            background-color: #1565c0;
+        }
+        .project-card {
+            background-color: #1c1e21;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
         .footer {
             text-align: center;
             margin-top: 30px;
             font-size: 14px;
+            color: gray;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>🚀 Salesforce Admin Portfolio</h1>
+        <h1>🎬 Salesforce Admin Portfolio</h1>
         <p class="text-center">Hello, I'm <strong>[Your Name]</strong>, a Salesforce Admin with expertise in automation, custom objects, and reports.</p>
 
         <h2>📌 My Projects</h2>
-        <ul>
-            <li><strong>Sales Process Management App</strong> - Custom-built Salesforce App for managing orders & payments.</li>
-        </ul>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="project-card">
+                    <h4>📊 Sales Process Management App</h4>
+                    <p>A custom-built Salesforce App for managing orders & payments.</p>
+                    <button class="btn btn-primary">View Project</button>
+                </div>
+            </div>
+        </div>
 
         <h2>🏆 Skills & Certifications</h2>
         <ul>
