@@ -1,0 +1,31 @@
+body {
+    background-color: #0f171e; /* Dark Background */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #1f80e0; /* Prime Video Blue */
+}
+
+.navbar {
+    background-color: #1c1e21;
+}
+
+.accordion-button {
+    background-color: #1f80e0;
+    color: white;
+}
+
+.accordion-body {
+    background-color: #1c1e21;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: gray;
+}
