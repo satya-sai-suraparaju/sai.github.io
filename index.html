@@ -32,6 +32,14 @@
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-image {
+            width: 100%;
+            border-radius: 10px;
         }
         .footer {
             text-align: center;
@@ -49,10 +57,22 @@
 
         <h2>📌 My Projects</h2>
         <div class="row">
+            <!-- Project 1 -->
             <div class="col-md-6">
                 <div class="project-card">
+                    <img src="YOUR_IMAGE_URL_HERE" class="project-image" alt="Sales Order Screenshot">
                     <h4>📊 Sales Process Management App</h4>
                     <p>A custom-built Salesforce App for managing orders & payments.</p>
+                    <button class="btn btn-primary">View Project</button>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-6">
+                <div class="project-card">
+                    <img src="YOUR_IMAGE_URL_HERE" class="project-image" alt="Automation Screenshot">
+                    <h4>⚙️ Process Automation (Flows & Process Builder)</h4>
+                    <p>Automated order status updates using Flows & Process Builder.</p>
                     <button class="btn btn-primary">View Project</button>
                 </div>
             </div>
