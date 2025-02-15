@@ -77,4 +77,5 @@ header {
 /* Adjust Carousel Controls */
 .carousel-control-prev, .carousel-control-next {
     filter: invert(1); /* Change color for visibility */
+    background-color: black;
 }
