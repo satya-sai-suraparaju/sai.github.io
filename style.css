@@ -15,80 +15,43 @@ h1, h2 {
 
 /* Mini-Projects Section */
 #mini-projects {
-    text-align: center;
-    margin: 50px 0;
-}
-
-/* Make projects appear in a horizontal row */
-.project-carousel {
-    display: flex;
-    flex-wrap: nowrap; /* Ensure all items stay in one row */
-    gap: 20px;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    padding: 20px;
-    scrollbar-width: none; /* Hide scrollbar */
-    -ms-overflow-style: none; /* Hide scrollbar in Edge */
-}
-
-/* Hide scrollbar in Chrome/Safari */
-.project-carousel::-webkit-scrollbar {
-    display: none;
-}
-
-.project-card {
-    flex: 0 0 auto; /* Prevents shrinking */
-    width: 280px; /* Fixed width */
-    height: 370px; /* Fixed height */
+    background-color: #0f171e; /* Dark theme */
+    color: white;
+    padding: 50px 0;
     border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    background: #1c1e21;
-    transition: transform 0.3s ease-in-out;
 }
 
-/* Project Images */
+/* Project Cards */
+.project-card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
 .project-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
-/* Hover Effect for Pop-up Details */
-.project-info {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-/* Expand card on hover */
+/* Hover Effect - Expand the card */
 .project-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.2); /* Makes it bigger on hover */
+    z-index: 10;
 }
 
-/* Reveal project details when hovering */
-.project-card:hover .project-info {
-    transform: translateY(0);
-    opacity: 1;
+/* Carousel Buttons */
+.carousel-control-prev, .carousel-control-next {
+    background: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
-/* Button inside project details */
-.project-info .btn {
-    display: inline-block;
-    background-color: #1f80e0;
-    color: white;
-    padding: 8px 12px;
-    text-decoration: none;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-
-.project-info .btn:hover {
-    background-color: #1558b3;
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1); /* Makes arrows white */
 }
