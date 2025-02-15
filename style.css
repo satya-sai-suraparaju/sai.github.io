@@ -29,6 +29,7 @@ h1, h2 {
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
     border-radius: 10px;
+    display: inline-block; /* Makes it behave like a clickable button */
 }
 
 .project-card img {
@@ -42,6 +43,11 @@ h1, h2 {
 .project-card:hover {
     transform: scale(1.2); /* Makes it bigger on hover */
     z-index: 10;
+}
+
+/* Remove link styles */
+.project-card a {
+    text-decoration: none;
 }
 
 /* Carousel Buttons */
