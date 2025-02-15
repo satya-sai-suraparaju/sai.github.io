@@ -2,7 +2,7 @@
     width: 150px;  /* Adjust logo size */
     height: auto;  /* Keep aspect ratio */
     display: block;
-    margin: 0 auto 10px; /* Center the logo with spacing */
+    margin: 0 auto 28px; /* Center the logo with spacing */
 }
 
 body {
