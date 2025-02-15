@@ -1,56 +1,80 @@
+/* Salesforce Logo Styling */
 .salesforce-logo {
-    width: 150px;  /* Adjust logo size */
-    height: auto;  /* Keep aspect ratio */
+    width: 120px; /* Adjust size */
+    height: auto;
     display: block;
-    margin: 0 auto 28px; /* Center the logo with spacing */
+    margin: 0 auto 15px; /* Center and add spacing */
 }
 
+/* Background Blur for Better Readability */
 body {
-    background: url("https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/salesforce%20Image.webp");
+    background: url("https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/salesforce%20Image.webp") no-repeat center center fixed;
     background-size: cover;
-    color: white; /* Ensures text is readable */
+    color: white;
     font-family: Arial, sans-serif;
+    position: relative;
 }
 
-
-h1, h2 {
-    text-align: center;
-    color: #1f80e0; /* Prime Video Blue */
+/* Add Blur Effect to Background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(5px); /* Adjust blur strength */
+    z-index: -1;
 }
 
+/* Navigation Bar */
 .navbar {
     background-color: #1c1e21;
 }
 
+/* Spacing Fix for Header */
+header {
+    text-align: center;
+    margin-bottom: 50px; /* Adds space below header */
+    padding: 20px;
+}
+
 /* Mini-Projects Section */
 #mini-projects {
-    background-color: #0f171e; /* Dark theme */
+    background-color: rgba(15, 23, 30, 0.9); /* Dark with slight transparency */
     color: white;
     padding: 50px 0;
     border-radius: 10px;
+    backdrop-filter: blur(5px);
 }
 
 /* Project Cards */
 .project-card {
     position: relative;
-    width: 250px; /* Adjust width */
-    height: 350px; /* Adjust height */
+    width: 250px;
+    height: 350px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
     border-radius: 10px;
     display: inline-block;
 }
 
-/* Fix Image Size */
+/* Ensure Images Fit in Cards */
 .project-card img {
-    width: 100%; /* Ensure full width */
-    height: 100%; /* Ensure full height */
-    object-fit: cover; /* Crop to fit */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
 }
 
-/* Hover Effect - Expand the card */
+/* Hover Effect */
 .project-card:hover {
-    transform: scale(1.2); /* Makes it bigger on hover */
+    transform: scale(1.2);
     z-index: 10;
+}
+
+/* Adjust Carousel Controls */
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(1); /* Change color for visibility */
 }
