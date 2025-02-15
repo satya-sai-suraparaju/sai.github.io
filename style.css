@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url('https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/salesforce%20Image.webp') no-repeat center center fixed;
+    background: url("https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/salesforce%20Image.webp");
     background-size: cover;
     color: white; /* Ensures text is readable */
     font-family: Arial, sans-serif;
