@@ -19,10 +19,10 @@ h1, h2 {
     margin: 50px 0;
 }
 
-/* Make Projects Display in a Row */
+/* Make projects appear in a horizontal row */
 .project-carousel {
     display: flex;
-    flex-wrap: nowrap; /* No line breaks */
+    flex-wrap: nowrap; /* Ensure all items stay in one row */
     gap: 20px;
     overflow-x: auto; /* Enable horizontal scrolling */
     padding: 20px;
@@ -30,25 +30,30 @@ h1, h2 {
     -ms-overflow-style: none; /* Hide scrollbar in Edge */
 }
 
+/* Hide scrollbar in Chrome/Safari */
 .project-carousel::-webkit-scrollbar {
-    display: none; /* Hide scrollbar in Chrome/Safari */
+    display: none;
 }
 
 .project-card {
-    flex: 0 0 auto; /* Do not shrink or grow */
-    width: 250px; /* Fixed width */
-    height: 350px; /* Fixed height */
+    flex: 0 0 auto; /* Prevents shrinking */
+    width: 280px; /* Fixed width */
+    height: 370px; /* Fixed height */
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
+    background: #1c1e21;
     transition: transform 0.3s ease-in-out;
 }
 
+/* Project Images */
 .project-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* Hover Effect for Pop-up Details */
 .project-info {
     position: absolute;
     bottom: 0;
@@ -57,14 +62,33 @@ h1, h2 {
     color: white;
     padding: 10px;
     text-align: center;
+    opacity: 0;
     transform: translateY(100%);
-    transition: transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
+/* Expand card on hover */
 .project-card:hover {
-    transform: scale(1.1); /* Expand on hover */
+    transform: scale(1.1);
 }
 
+/* Reveal project details when hovering */
 .project-card:hover .project-info {
     transform: translateY(0);
+    opacity: 1;
+}
+
+/* Button inside project details */
+.project-info .btn {
+    display: inline-block;
+    background-color: #1f80e0;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.project-info .btn:hover {
+    background-color: #1558b3;
 }
