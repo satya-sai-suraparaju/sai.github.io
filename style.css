@@ -13,24 +13,31 @@ h1, h2 {
     background-color: #1c1e21;
 }
 
-/* Mini-Projects Carousel */
+/* Mini-Projects Section */
 #mini-projects {
     text-align: center;
     margin: 50px 0;
 }
 
+/* Make Projects Display in a Row */
 .project-carousel {
     display: flex;
+    flex-wrap: nowrap; /* No line breaks */
     gap: 20px;
-    overflow-x: auto;
+    overflow-x: auto; /* Enable horizontal scrolling */
     padding: 20px;
-    scrollbar-width: none; /* Hide Scrollbar */
+    scrollbar-width: none; /* Hide scrollbar */
+    -ms-overflow-style: none; /* Hide scrollbar in Edge */
+}
+
+.project-carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome/Safari */
 }
 
 .project-card {
-    position: relative;
-    width: 250px;
-    height: 350px;
+    flex: 0 0 auto; /* Do not shrink or grow */
+    width: 250px; /* Fixed width */
+    height: 350px; /* Fixed height */
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
@@ -55,10 +62,9 @@ h1, h2 {
 }
 
 .project-card:hover {
-    transform: scale(1.1); /* Hover Effect */
+    transform: scale(1.1); /* Expand on hover */
 }
 
 .project-card:hover .project-info {
     transform: translateY(0);
 }
-
