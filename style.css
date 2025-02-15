@@ -13,19 +13,52 @@ h1, h2 {
     background-color: #1c1e21;
 }
 
-.accordion-button {
-    background-color: #1f80e0;
-    color: white;
-}
-
-.accordion-body {
-    background-color: #1c1e21;
-    color: white;
-}
-
-.footer {
+/* Mini-Projects Carousel */
+#mini-projects {
     text-align: center;
-    margin-top: 30px;
-    font-size: 14px;
-    color: gray;
+    margin: 50px 0;
 }
+
+.project-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    scrollbar-width: none; /* Hide Scrollbar */
+}
+
+.project-card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.1); /* Hover Effect */
+}
+
+.project-card:hover .project-info {
+    transform: translateY(0);
+}
+
