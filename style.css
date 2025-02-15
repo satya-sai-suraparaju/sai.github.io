@@ -1,8 +1,17 @@
+.salesforce-logo {
+    width: 150px;  /* Adjust logo size */
+    height: auto;  /* Keep aspect ratio */
+    display: block;
+    margin: 0 auto 10px; /* Center the logo with spacing */
+}
+
 body {
-    background-color: #0f171e; /* Dark Background */
-    color: white;
+    background: url('https://raw.githubusercontent.com/your-username/your-repository/main/images/salesforce-image.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: white; /* Ensures text is readable */
     font-family: Arial, sans-serif;
 }
+
 
 h1, h2 {
     text-align: center;
