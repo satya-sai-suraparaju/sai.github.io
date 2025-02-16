@@ -29,7 +29,7 @@ body::before {
 header {
     text-align: center;
     margin-bottom: 50px; /* Adds space below header */
-    padding: 50px;
+    padding: 80px;
 }
 
 /* Mini-Projects Section */
