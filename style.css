@@ -29,14 +29,14 @@ body::before {
 header {
     text-align: center;
     margin-bottom: 50px; /* Adds space below header */
-    padding: 50px;
+    padding: 30px;
 }
 
 /* Mini-Projects Section */
 #mini-projects {
     background-color: rgba(15, 23, 30, 0.9); /* Dark with slight transparency */
     color: white;
-    padding: 50px 0;
+    padding: 30px 0;
     border-radius: 10px;
     backdrop-filter: blur(5px);
 }
@@ -80,13 +80,4 @@ header {
 /* Change arrow color to white */
 .carousel-control-prev-icon, .carousel-control-next-icon {
     filter: invert(1);
-}
-
-/* Adjust button positioning */
-.carousel-control-prev {
-    left: -30px; /* Move closer to the carousel */
-}
-
-.carousel-control-next {
-    right: -30px; /* Move closer to the carousel */
 }
