@@ -1,70 +1,45 @@
-/* ==========================
-   1. BODY & BACKGROUND
-========================== */
+/* ✅ BACKGROUND FIX */
 body {
-    margin-top: 70px; /* Ensures content is not hidden behind the fixed navbar */
     background: url("https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/salesforce%20Image.webp") no-repeat center center fixed;
     background-size: cover;
     color: white;
     font-family: Arial, sans-serif;
-    position: relative;
 }
 
-/* Blur the Background Image */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    filter: blur(5px); /* Adjust blur strength */
-    z-index: -1;
-}
-
-/* ==========================
-   2. NAVBAR
-========================== */
+/* ✅ NAVBAR FIX */
 .navbar {
     background-color: #1c1e21;
 }
 
-/* ==========================
-   3. HEADER SECTION
-========================== */
+/* ✅ SPACING FIX */
+.main-content {
+    margin-top: 80px; /* Push content down so it's not hidden under the navbar */
+}
+
+/* ✅ HEADER */
 header {
     text-align: center;
-    margin-top: 30px; /* Fixed missing semicolon */
     margin-bottom: 30px;
-    padding: 30px;
+    padding: 20px;
 }
 
-/* ==========================
-   4. MINI-PROJECTS SECTION
-========================== */
+/* ✅ MINI-PROJECTS */
 #mini-projects {
-    background-color: rgba(15, 23, 30, 0.9); /* Dark overlay with transparency */
-    color: white;
+    background-color: rgba(15, 23, 30, 0.9);
     padding: 30px 0;
     border-radius: 10px;
-    backdrop-filter: blur(5px);
-    margin-bottom: 40px; /* Space below carousel */
 }
 
-/* ==========================
-   5. PROJECT CARDS
-========================== */
+/* ✅ PROJECT CARDS */
 .project-card {
-    position: relative;
     width: 250px;
     height: 350px;
+    border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-    border-radius: 10px;
-    display: inline-block;
 }
 
+/* ✅ MAKE IMAGES FIT */
 .project-card img {
     width: 100%;
     height: 100%;
@@ -72,39 +47,32 @@ header {
     border-radius: 10px;
 }
 
-/* Hover Effect: Zoom in the card */
+/* ✅ HOVER EFFECT */
 .project-card:hover {
     transform: scale(1.2);
     z-index: 10;
 }
 
-/* ==========================
-   6. CAROUSEL CONTROLS
-========================== */
-.carousel-control-prev,
-.carousel-control-next {
-    width: 40px;  /* Adjust control width */
-    height: 40px; /* Adjust control height */
-    top: 50%;     /* Vertically centered */
+/* ✅ CAROUSEL CONTROLS */
+.carousel-control-prev, .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    top: 50%;
     transform: translateY(-50%);
-    background: none; /* Remove background */
-    border: none; /* Remove border */
-    opacity: 1;   /* Fully visible */
 }
 
 .carousel-control-prev {
-    left: 20px;  /* Position from left edge */
+    left: 10px;
 }
 
 .carousel-control-next {
-    right: 20px; /* Position from right edge */
+    right: 10px;
 }
 
-/* Default Bootstrap Arrow Icons */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 30px;  /* Adjust icon size */
+/* ✅ FIX ICON SIZE */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 30px;
     height: 30px;
-    background-size: 30px 30px;
-    filter: invert(1); /* White icons */
+    background-size: contain;
+    filter: invert(1);
 }
