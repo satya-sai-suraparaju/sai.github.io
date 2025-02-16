@@ -28,7 +28,7 @@ body::before {
 /* Spacing Fix for Header */
 header {
     text-align: center;
-    margin-bottom: 50px; /* Adds space below header */
+    margin-bottom: 70px; /* Adds space below header */
     padding: 80px;
 }
 
@@ -66,10 +66,27 @@ header {
     z-index: 10;
 }
 
-/* Adjust Carousel Controls */
+/* Fix Carousel Navigation Buttons */
 .carousel-control-prev, .carousel-control-next {
-    filter: invert(1); /* Change color for visibility */
-    background-color: black;
-    width:50px;
-    height:50px;
+    width: 50px;  /* Reduce button size */
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Change arrow color to white */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+/* Adjust button positioning */
+.carousel-control-prev {
+    left: -30px; /* Move closer to the carousel */
+}
+
+.carousel-control-next {
+    right: -30px; /* Move closer to the carousel */
 }
