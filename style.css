@@ -87,7 +87,7 @@ header {
     height: 40px; /* Adjust control height */
     top: 50%;     /* Vertically centered */
     transform: translateY(-50%);
-    background: none; /* Remove background */
+    background: rgba(255, 255, 255, 0.7); /* Increase visibility on hover */
     border: none; /* Remove border */
     opacity: 1;   /* Fully visible */
 }
