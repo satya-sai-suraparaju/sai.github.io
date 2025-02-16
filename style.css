@@ -28,6 +28,7 @@ body::before {
 /* Spacing Fix for Header */
 header {
     text-align: center;
+    margin-top: 30px
     margin-bottom: 30px; /* Adds space below header */
     padding: 30px;
 }
