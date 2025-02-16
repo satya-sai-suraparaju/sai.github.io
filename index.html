@@ -4,116 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salesforce Admin Portfolio</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-            <header class="text-center">
-                <h1>🚀 Salesforce Admin Portfolio</h1>
-                <p>Hi, I'm <strong>Satya Suraparaju</strong>, a Salesforce Admin with expertise in automation, custom objects, and reports.</p>
-            </header>
-
-
-
-        <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">My Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#mini-projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+    <!-- ✅ FIXED NAVBAR (Now properly positioned) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#mini-projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- Mini-Projects Section -->
-<section id="mini-projects" class="container text-center">
-    <h2 class="mb-4">🎬 Mini-Projects</h2>
+    <!-- ✅ MAIN CONTENT CONTAINER (Now properly aligned) -->
+    <div class="container main-content">
+        <header class="text-center">
+            <h1>🚀 Salesforce Admin Portfolio</h1>
+            <p>Hi, I'm <strong>Satya Suraparaju</strong>, a Salesforce Admin with expertise in automation, custom objects, and reports.</p>
+        </header>
 
-    <!-- Carousel Container -->
-    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-        
-        <!-- Carousel Inner -->
-        <div class="carousel-inner">
-            
-            <!-- Row 1 -->
-            <div class="carousel-item active">
-                <div class="d-flex justify-content-center">
+        <!-- ✅ MINI-PROJECTS SECTION (Carousel Now Working) -->
+        <section id="mini-projects" class="container text-center">
+            <h2 class="mb-4">🎬 Mini-Projects</h2>
+
+            <!-- ✅ WORKING CAROUSEL -->
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                
+                <!-- ✅ Carousel Inner -->
+                <div class="carousel-inner">
                     
-                    <a href="project1.html" class="project-card mx-2">
-                        <img src="https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/Sales%20Management%20App.webp">
-                    </a>
+                    <!-- ✅ Row 1 (First Slide) -->
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <a href="project1.html" class="project-card mx-2">
+                                <img src="Sales%20Management%20App.webp" alt="Sales Process App">
+                            </a>
+                            <a href="project2.html" class="project-card mx-2">
+                                <img src="Employee%20Onboarding%20App.webp" alt="Employee Onboarding App">
+                            </a>
+                            <a href="project3.html" class="project-card mx-2">
+                                <img src="Case%20Management%20System.webp" alt="Case Management System">
+                            </a>
+                        </div>
+                    </div>
 
-                    <a href="project2.html" class="project-card mx-2">
-                        <img src="https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/Employee%20Onboarding%20App.webp">
-                    </a>
-
-                    <a href="project3.html" class="project-card mx-2">
-                        <img src="https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/Case%20Management%20System.webp">
-                    </a>
+                    <!-- ✅ Row 2 (Second Slide) -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <a href="project4.html" class="project-card mx-2">
+                                <img src="Volunteer%20Management%20App.webp" alt="Volunteer Management App">
+                            </a>
+                            <a href="project5.html" class="project-card mx-2">
+                                <img src="Expense%20Tracking%20App.webp" alt="Expense Tracking App">
+                            </a>
+                        </div>
+                    </div>
 
                 </div>
+
+                <!-- ✅ FIXED CAROUSEL CONTROLS -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
             </div>
-
-            <!-- Row 2 -->
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                    
-                    <a href="project4.html" class="project-card mx-2">
-                        <img src="https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/Volunteer%20Management%20App.webp">
-                    </a>
-
-                    <a href="project5.html" class="project-card mx-2">
-                        <img src="https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/Expense%20Tracking%20App.webp">
-                    </a>
-
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Carousel Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
-
-    </div>
-</section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>🏆 Skills & Certifications</h2>
-            <ul>
-                <li>Salesforce Administration</li>
-                <li>Custom Objects & Fields</li>
-                <li>Process Automation (Flows & Process Builder)</li>
-                <li>Reports & Dashboards</li>
-            </ul>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>📞 Contact</h2>
-            <p>🔗 <a class="btn btn-primary" href="https://linkedin.com/in/yourprofile" target="_blank">Visit My LinkedIn</a></p>
-            <p>📧 ssuraparaju23@gmail.com</p>
-        </section>
-
-        <div class="footer">© 2025 Satya - Built with GitHub Pages</div>
     </div>
 
-    <!-- Bootstrap JS -->
+    <!-- ✅ Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-</html> 
+</html>
