@@ -97,20 +97,3 @@ header {
   filter: invert(1);          /* White color (if you want white arrows) */
   content: "";
 }
-
-/* Optional: Use text arrows instead of default icons */
-.carousel-control-prev-icon::after {
-  content: "<";
-  font-size: 2rem;
-  color: white;
-  position: relative;
-  left: -2px; /* tweak as needed */
-}
-
-.carousel-control-next-icon::after {
-  content: ">";
-  font-size: 2rem;
-  color: white;
-  position: relative;
-  right: -2px; /* tweak as needed */
-}
