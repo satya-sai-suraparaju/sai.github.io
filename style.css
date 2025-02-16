@@ -66,18 +66,51 @@ header {
     z-index: 10;
 }
 
-/* Fix Carousel Navigation Buttons */
-.carousel-control-prev, .carousel-control-next {
-    width: 50px;  /* Reduce button size */
-    height: 50px;
-    background-color: White; /* Semi-transparent black background */
-    border-radius: 50%; /* Make it circular */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Position the carousel controls properly */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;              /* Adjust control width */
+  height: 40px;             /* Adjust control height */
+  top: 50%;                 /* Position them vertically centered */
+  transform: translateY(-50%);
+  background: none;         /* Remove any background */
+  border: none;             /* Remove border if any */
+  opacity: 1;               /* Make sure they’re fully visible */
 }
 
-/* Change arrow color to white */
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    filter: invert(1);
+/* Move them slightly inward from the edges */
+.carousel-control-prev {
+  left: 20px;               /* Adjust horizontal position */
+}
+
+.carousel-control-next {
+  right: 20px;
+}
+
+/* Make the arrow icons smaller & properly centered */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;              /* Adjust icon size */
+  height: 30px;
+  background-size: 30px 30px;  /* Ensure the icon fits */
+  background-image: none;      /* We’ll replace the default icon with text or custom styling */
+  filter: invert(1);          /* White color (if you want white arrows) */
+  content: "";
+}
+
+/* Optional: Use text arrows instead of default icons */
+.carousel-control-prev-icon::after {
+  content: "<";
+  font-size: 2rem;
+  color: white;
+  position: relative;
+  left: -2px; /* tweak as needed */
+}
+
+.carousel-control-next-icon::after {
+  content: ">";
+  font-size: 2rem;
+  color: white;
+  position: relative;
+  right: -2px; /* tweak as needed */
 }
