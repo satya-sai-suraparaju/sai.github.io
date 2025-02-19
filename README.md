@@ -36,10 +36,6 @@ Reports & Dashboards: Custom Salesforce reports & visualizations
 
 📂 Deployment & Setup
 
-Clone Repository:
-
-git clone https://github.com/satya-sai-suraparaju/sales-management-app.git
-
 Login to Salesforce Developer Org
 
 Deploy Custom Objects & Flows
