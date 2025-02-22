@@ -110,7 +110,7 @@ header {
 }
 
 .section-container{
-      background-color: #1C1C1C; /* Matte Black */
+      background-color: rgba(28, 28, 28, 0.9); /* Matte black with slight transparency */
       padding: 20px;
       border-radius: 10px;
       margin-top: 30px;
