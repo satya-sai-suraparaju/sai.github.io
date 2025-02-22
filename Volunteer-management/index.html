@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Management App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Set background image and text styles */
+        body {
+            background: url('https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/Volunteer-management/Volunteer%20management%20app%20bg.webp') 
+            no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+        }
+        .container {
+            background-color: #1C1C1C; /* Matte Black */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .btn-primary {
+            margin-top: 20px;
+        }
+        #download {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center">
+            <h1>🚀 Volunteer Management App</h1>
+            <p>A Salesforce-based solution to manage volunteers, track events, and automate volunteer assignments.</p>
+        </header>
+
+        <!-- Project Overview Section -->
+        <section id="description">
+            <h2>📌 Project Overview</h2>
+            <p>The <strong>Volunteer Management App</strong> helps organizations efficiently assign volunteers to events, track their contributions, and automate volunteer status updates.</p>
+            
+            <h3>✨ Features</h3>
+            <ul>
+                <li><strong>Volunteer Records Management</strong></li>
+                <li><strong>Event Management</strong></li>
+                <li><strong>Volunteer Assignments</strong></li>
+                <li><strong>Automated Status Updates</strong></li>
+            </ul>
+        </section>
+
+        <!-- Screenshot Section -->
+        <section id="screenshots">
+            <h2>📷 Project Screenshots</h2>
+            <img src="https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/Volunteer-management/Volunteer%20object.png" class="img-fluid">
+            <img src="https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/Volunteer-management/Events.png" alt="Volunteer Management Screenshot 2" class="img-fluid">
+            <img src="https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/Volunteer-management/Volunteer%20assignment.png" alt="Volunteer Management Screenshot 3" class="img-fluid">
+            <img src="https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/Volunteer-management/Flow.png" alt="Volunteer Management Screenshot 4" class="img-fluid">
+        </section>
+
+        <!-- Step-by-Step Guide Section -->
+        <section id="steps">
+            <h2>📌 Step-by-Step Guide</h2>
+            <div class="step">
+                <h3>Step 1: Create Volunteer & Event Objects</h3>
+                <p>Define objects for Volunteers and Events, including relevant fields such as availability and skills.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2: Set Up Volunteer Assignments</h3>
+                <p>Create a junction object linking Volunteers and Events using lookup fields.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3: Configure Automation with Flows</h3>
+                <p>Implement a Record-Triggered Flow to update the Volunteer’s Status to "Active" when they are assigned to an event.</p>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download">
+            <h2>📂 Download Project</h2>
+            <p>Click the link below to download the full project file:</p>
+            <a href="https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/Volunteer-management/%F0%9F%93%8C%20Volunteer%20Management%20App.docx" class="btn btn-success">Download Project</a>
+        </section>
+
+        <!-- Back to Portfolio Button -->
+        <a href="../index.html" class="btn btn-primary">Back to Portfolio</a>
+    </div>
+</body>
+</html>
