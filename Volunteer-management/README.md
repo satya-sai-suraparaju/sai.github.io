@@ -43,9 +43,6 @@ A **Salesforce App** to manage **volunteers and events**, allowing organizations
 3️⃣ **Flow Runs → Automatically Updates the Volunteer’s Status to "Active".**  
 4️⃣ **Volunteer’s Status is tracked in the system.**  
 
-## 🖥️ Screenshots  
-_(Add images of Volunteer records, Event records, Volunteer Assignments, and Flow setup here.)_  
-
 ## 🏗️ Future Enhancements  
 🔹 Add **Reports & Dashboards** for tracking Volunteer contributions.  
 🔹 Automate **Volunteer Reminders** via Email.  
