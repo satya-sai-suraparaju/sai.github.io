@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Set background image and text styles */
+        body {
+            background: url('https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/Customer_Feedback_Bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+        }
+        .container {
+            background-color: #1C1C1C; /* Matte Black */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .btn-primary {
+            margin-top: 20px; /* Adds space above the button */
+        }
+        #download {
+            margin-bottom: 20px; /* Adds space below the download section */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="text-center">
+            <h1>📝 Customer Feedback Management System</h1>
+            <p>A real-world Salesforce project covering automation, Flows, and data import methods.</p>
+        </header>
+
+        <!-- Project Overview Section -->
+        <section id="description">
+            <h2>📌 Project Overview</h2>
+            <p>The <strong>Customer Feedback Management System</strong> is a Salesforce-based solution that helps businesses track and manage customer feedback efficiently. It automates feedback assignment, ensures proper handling, and provides analytics on customer satisfaction.</p>
+            
+            <h3>✨ Features</h3>
+            <ul>
+                <li>Custom <strong>Feedback Object</strong> for structured data storage.</li>
+                <li>Automated <strong>assignment of feedback</strong> using Record-Triggered Flows.</li>
+                <li>Bulk feedback import using <strong>Data Loader & Import Wizard</strong>.</li>
+                <li>Role-based access control to ensure data security.</li>
+            </ul>
+        </section>
+
+        <!-- Screenshot Section -->
+        <section id="screenshots">
+            <h2>📷 Project Screenshots</h2>
+            <img src="https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/Customer_Feedback_Object.png" class="img-fluid">
+            <img src="https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/Data_Import_Issue.png" alt="Feedback Import Issue" class="img-fluid">
+            <img src="https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/Flow_Automation.png" alt="Flow Automation for Feedback Assignment" class="img-fluid">
+        </section>
+
+        <!-- Step-by-Step Guide Section -->
+        <section id="steps">
+            <h2>📌 Step-by-Step Guide</h2>
+            <div class="step">
+                <h3>Step 1: Create Feedback Object</h3>
+                <p>Go to <strong>Setup > Object Manager</strong> and create a <strong>Feedback</strong> object.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2: Configure Fields</h3>
+                <p>Add fields such as <strong>Feedback Type (Picklist)</strong>, <strong>Priority</strong>, <strong>Assigned To (Lookup: User)</strong>.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3: Data Import Using Data Loader</h3>
+                <p>Use <strong>Data Import Wizard</strong> for simple data uploads and <strong>Data Loader</strong> for bulk imports.</p>
+            </div>
+            <div class="step">
+                <h3>Step 4: Automate Feedback Assignment</h3>
+                <p>Implement a <strong>Record-Triggered Flow</strong> to assign feedback based on type.</p>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download">
+            <h2>📂 Download Project</h2>
+            <p>Click the link below to download the full project file:</p>
+            <a href="https://raw.githubusercontent.com/satya-sai-suraparaju/sai.github.io/main/Customer_Feedback_App.zip" class="btn btn-success">Download Project</a>
+        </section>
+
+        <!-- Back to Portfolio Button -->
+        <a href="index.html" class="btn btn-primary">Back to Portfolio</a>
+    </div>
+
+</body>
+</html>
 
